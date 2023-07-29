@@ -1,0 +1,28 @@
+# Path related
+raw_dataset_path: data/raw/dataset_kompas.xlsx
+data_set_path: data/output/data.json
+data_clean_path: data/output/data_clean.json
+data_summarized_path: data/output/data_summarized.json
+data_error_path: data/output/data_error.json
+data_train_ner_path: data/ner_dataset/train.tsv
+data_test_ner_path: data/ner_dataset/test.tsv
+data_valid_ner_path: data/ner_dataset/valid.tsv
+ner_data_path: data/ner_dataset/nertagged.tsv
+wv_file_path: data/ner_dataset/id_ft.bin
+input_folder: data/ner_dataset
+
+
+# Preprocessing related
+index_column: 'Unnamed: 0'
+output_column: sentimen
+text_column: FullText
+token_column: tokenize
+sum_token_column: tokens
+max_length: 150
+min_length: 100
+sum_pretrained: panggi/t5-base-indonesian-summarization-cased
+
+
+# Modeling related
+best_model_path: data/output/best_model.pt
+ner_model_path: data/output/nermodel.pkl
